@@ -306,6 +306,8 @@ if( MSVC )
 endif()
 
 install( TARGETS crypto
+  #  EXPORT Crypto
     RUNTIME DESTINATION bin
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib )
+  #install( EXPORT Crypto DESTINATION export-lib NAMESPACE OpenSSL::)
