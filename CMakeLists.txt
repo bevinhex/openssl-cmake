@@ -154,6 +154,6 @@ set( CPACK_PACKAGE_FILE_NAME "${CMAKE_PROJECT_NAME}-${VERSION_STRING}" )
 
 include( CPack )
 
-#set(CMAKE_EXPORT_PACKAGE_REGISTRY ON)
-#export(PACKAGE offlinessl)
-#export(TARGETS ssl crypto NAMESPACE offlinessl:: FILE offlinesslConfig.cmake)
+set(CMAKE_EXPORT_PACKAGE_REGISTRY ON)
+export(PACKAGE OpenSSL)
+export(TARGETS ssl crypto NAMESPACE OpenSSL:: FILE OpenSSLConfig.cmake)
